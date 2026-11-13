@@ -10,4 +10,4 @@ if(True):
 
 # Penulisan yang salah:
 #if(True):
-#print("Benar.") # tidak ada spasi di awal baris (sejajar dengan kode di atasnya)
+#    print("Benar.") # tidak ada spasi di awal baris (sejajar dengan kode di atasnya)
