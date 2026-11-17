@@ -303,3 +303,36 @@ genap = {2, 4, 6, 8}
 print(ganjil | genap)   # Union
 print(ganjil & genap)   # Intersection
 print(ganjil - genap)   # Difference
+
+# Membuat dictionary sederhana
+mahasiswa = {
+    "nama": "TOTO",
+    "umur": 18,
+    "jurusan": "RPL"
+}
+
+print(mahasiswa)
+
+print(mahasiswa["nama"])    # TOTO
+print(mahasiswa.get("umur")) # 18
+
+mahasiswa["angkatan"] = 2023   # Menambah data baru
+mahasiswa["umur"] = 21         # Mengubah value umur
+
+print(mahasiswa)
+
+mahasiswa.pop("jurusan")   # Menghapus dengan key
+del mahasiswa["nama"]      # Menghapus dengan del
+
+print(mahasiswa)
+
+for key, value in mahasiswa.items():
+    print(key, ":", value)
+
+kampus = {
+    "mahasiswa1": {"nama": "TOTO", "umur": 21},
+    "mahasiswa2": {"nama": "Siti", "umur": 22}
+}
+
+print(kampus["mahasiswa1"]["nama"])  # TOTO
+
