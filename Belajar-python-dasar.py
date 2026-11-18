@@ -654,3 +654,27 @@ import math
 
 print(math.sqrt(16))   # Akar kuadrat → 4.0
 print(math.pi)         # Nilai π → 3.141592653589793
+
+# operasi.py
+def kurang(a, b):
+    return a - b
+
+# geometri.py
+def luas_persegi(sisi):
+    return sisi * sisi
+
+#from my_package import operasi, geometri
+
+# print(operasi.kurang(10, 4))       # Output: 6
+# print(geometri.luas_persegi(5))    # Output: 25
+
+#from my_package.operasi import kurang
+#from my_package.geometri import luas_persegi
+
+print(kurang(20, 7))          # Output: 13
+print(luas_persegi(8))        # Output: 64
+
+import os
+print(os.getcwd())   # Menampilkan direktori kerja saat ini
+import datetime
+print(datetime.date.today())  # Menampilkan tanggal hari ini
